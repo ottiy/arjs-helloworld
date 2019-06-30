@@ -10,8 +10,9 @@
 
 <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs>
-        <a-marker type="pattern" url="./pattern.patt">
-            <a-box position='0 0.5 0' material='color: yellow;'></a-box>
+        <a-marker type="pattern" url="./marker.patt">
+            <a-entity position='0 0.5 0' text="value: Hello World;" geometry="primitive: plane; width: 5; height: auto"
+                rotation="-90 0 0"></a-entity>
         </a-marker>
         <a-entity camera></a-entity>
     </a-scene>
